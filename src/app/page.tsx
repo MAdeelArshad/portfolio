@@ -6,18 +6,18 @@ import Image from "next/image";
 export default function Home() {
   return (
     <motion.main
-      className="flex flex-col items-center justify-center h-full bg-gradient-to-br from-blue-50 to-indigo-100 text-center p-10"
+      className="flex flex-col items-center justify-center min-h-[calc(100vh-8rem)] bg-gradient-to-br from-blue-50 to-indigo-100 text-center px-4 sm:px-6 lg:px-8 py-8"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -30 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       <Image
-        src="/profile.jpeg" // Replace with your image path
+        src="/profile.jpeg"
         alt="Muhammad Adeel Arshad"
         width={150}
         height={150}
-        className="rounded-full mb-4 border-4 border-primary" // Primary color border
+        className="rounded-full mb-4 border-4 border-primary"
       />
       <h1 className="text-4xl md:text-6xl font-bold text-indigo-700 mb-4">
         Hi, I&apos;m Muhammad Adeel Arshad 👋
